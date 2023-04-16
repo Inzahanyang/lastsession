@@ -37,7 +37,7 @@ const Home: NextPage = () => {
   const router = useRouter();
   useEffect(() => {
     if (userData && !userData.ok) {
-      router.push("/login");
+      router.push("/signup");
     }
   }, [userData, router]);
 
